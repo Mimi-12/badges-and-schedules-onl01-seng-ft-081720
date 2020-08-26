@@ -16,14 +16,10 @@ def assign_rooms(speakers)
 end
 end
 
-def printer(name)
+def printer(batch_badge_creator)
   name.map do |name|
   "Hello, my name is #{name}."
 end
-end
-
-def printer(printer)
-printer.map do|printer|
-  "Hello, my name is #{printer}."
-end
+ batch_badge_creator
+ assign_rooms
 end
